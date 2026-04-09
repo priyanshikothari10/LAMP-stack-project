@@ -1,59 +1,125 @@
-# 🚀 LAMP Stack Deployment on AWS (Manual + Ansible Automation)
-
-This project demonstrates the transition from manual server setup to automated DevOps practices using Ansible.
-
----
+# 🚀 LAMP Stack Deployment on AWS (Manual → Ansible → Cloud)
 
 ## 📌 Project Overview
 
-* Deployed LAMP stack (Linux, Apache, MySQL, PHP) on AWS EC2
-* Built a dynamic PHP web application
-* Automated full setup using Ansible
+This project demonstrates the complete journey of deploying a LAMP stack (Linux, Apache, MySQL, PHP) from manual setup to automation and finally deploying it on AWS cloud using modern DevOps practices.
 
 ---
 
-## 🚀 Project Phases
+# 🧭 Project Phases
 
-### 🔹 Phase 1: Manual Setup
+## 🔹 Phase 1: Manual Setup
 
-* Installed Apache, PHP, MySQL manually
-* Configured web server
-* Connected database
-* Built feedback form
+* Installed Apache, MySQL, PHP manually on server
+* Configured web server and database
+* Deployed a basic PHP application
+* Tested application locally
 
-📂 Location: `phase-1-manual/`
-
----
-
-### 🔹 Phase 2: Ansible Automation
-
-* Automated LAMP stack setup
-* Used playbooks for deployment
-* Reduced manual work to one command
-
-📂 Location: `phase-2-ansible/`
+📌 **Learning:**
+Understanding core fundamentals of LAMP stack and server setup.
 
 ---
 
-## ⚙️ How to Run (Ansible)
+## 🔹 Phase 2: Automation using Ansible
 
-```bash
-ansible-playbook -i inventory playbook.yml
+* Automated LAMP stack setup using Ansible playbooks
+* Managed configuration using YAML files
+* Reduced manual effort and ensured consistency
+
+📌 **Learning:**
+Infrastructure as Code (IaC) and configuration management.
+
+---
+
+## 🔹 Phase 3: AWS Cloud Deployment
+
+* Deployed application on AWS EC2
+* Used RDS for managed MySQL database
+* Integrated S3 for storing static files
+* Configured security groups for secure communication
+
+📌 **Learning:**
+Cloud architecture, scalability, and real-world deployment practices.
+
+---
+
+# 🏗️ Architecture
+
+User → EC2 (Apache + PHP) → RDS (MySQL)
+→ S3 (Static Storage)
+
+---
+
+# ☁️ AWS Services Used
+
+* EC2 – Web server hosting
+* RDS – Managed MySQL database
+* S3 – Static file storage
+* IAM – Access control
+* Security Groups – Network security
+
+---
+
+# ⚙️ Features
+
+* End-to-end LAMP stack deployment
+* Manual + Automated + Cloud setup
+* Secure database connection using RDS
+* Static file storage using S3
+* Real-world debugging and issue resolution
+
+---
+
+# 🧠 Challenges Faced
+
+* Fixed MySQL access denied issue using security groups
+* Resolved HTTP 500 error due to PHP syntax issue
+* Solved S3 403 (Access Denied) error using bucket policy
+* Fixed S3 404 (NoSuchKey) error due to missing index file
+
+---
+
+# 📂 Project Structure
+
+```
+LAMP-stack-project/
+├── phase-1-manual/
+├── phase-2-ansible/
+├── aws/
+├── screenshots/
+├── README.md
 ```
 
 ---
 
-## 🎯 Skills Demonstrated
+# 📸 Screenshots
 
-* AWS EC2
-* Linux Administration
-* Apache Web Server
-* PHP & MySQL
-* Ansible Automation
-* DevOps Fundamentals
+### 🔹 EC2 Instance
+
+![EC2](screenshots/ec2.png)
+
+### 🔹 RDS Database
+
+![RDS](screenshots/rds.png)
+
+### 🔹 S3 Bucket
+
+![S3](screenshots/s3.png)
+
+### 🔹 Web Application
+
+![WebApp](screenshots/webapp.png)
 
 ---
 
-## 👩‍💻 Author
+# 🚀 Future Improvements
+
+* Domain mapping using Route 53
+* CI/CD pipeline integration
+
+---
+
+# 💡 Author
 
 Priyanshi Kothari
+B.Tech CSE (AI & DS) | DevOps Enthusiast
